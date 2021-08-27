@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvvm.Views.LoginPage"
+             BackgroundColor="#FFF7F7F7">
+
+    <!--<Grid
+
+        Padding="10"
+        VerticalOptions="Center"
+        RowDefinitions="Auto, Auto, Auto, Auto"
+        ColumnDefinitions="*,*,*,*">
+
+        <Entry
+            
+            Text="{Binding Input}"
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            Placeholder="Username"
+            PlaceholderColor="LightGray"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="300"
+            ClearButtonVisibility="WhileEditing"
+
+            ></Entry>
+
+        <Entry
+
+            Grid.Row="1"
+            Grid.ColumnSpan="4"
+            
+            Placeholder="Password"
+            PlaceholderColor="LightGray"
+            Text="{Binding Input}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="300"
+            IsPassword="True"
+
+            ClearButtonVisibility="WhileEditing" />
+
+        <Button
+
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="40"
+            TextColor="#FFF7F7F7"
+            Text="Login"
+            WidthRequest="250"
+            Command="CheckInput"
+            Background="#FFFE5F65"
+            BorderColor="#FFFE5F65"></Button>
+    </Grid>-->
+
+    <Grid
+        
+        Padding="10"
+        VerticalOptions="Center"
+        RowDefinitions="Auto, Auto, Auto, Auto"
+        ColumnDefinitions="*,*,*,*">
+
+        <Entry
+            
+            Text="{Binding InputUsername}"
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            Placeholder="Username"
+            PlaceholderColor="LightGray"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="300"
+            ClearButtonVisibility="WhileEditing"
+
+            
+            
+            ></Entry>
+
+        <Entry
+
+            Grid.Row="1"
+            Grid.ColumnSpan="4"
+            
+            Placeholder="Password"
+            PlaceholderColor="LightGray"
+            Text="{Binding InputPassword}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="300"
+            IsPassword="True"
+
+            ClearButtonVisibility="WhileEditing"></Entry>
+
+        <Button
+            Grid.Row="2"
+            Grid.ColumnSpan="4"
+
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="40"
+            TextColor="#FFF7F7F7"
+            Text="Login"
+            WidthRequest="250"
+            Command="{Binding CheckInput}"
+            Background="#FFFE5F65"
+            BorderColor="#FFFE5F65"></Button>
+
+
+
+
+    </Grid>
+    
+    
+</ContentPage>
