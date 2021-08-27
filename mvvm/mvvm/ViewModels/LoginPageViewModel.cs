@@ -9,17 +9,17 @@ namespace mvvm.ViewModels
 {
     public class LoginPageViewModel : INotifyPropertyChanged
     {
-        private string username;
+        private string email;
         public Action DisplayInvalidLoginPrompt;
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
-        public string InputUsername
+        public string InputEmail
         {
-            get { return username; }
+            get { return email; }
             set
             {
-                username = value;
+                email = value;
                 PropertyChanged(this, new PropertyChangedEventArgs("Username"));
             }
         }
@@ -44,26 +44,30 @@ namespace mvvm.ViewModels
 
             NavigateCommand = new Command(async () =>
             {
-                await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
+                await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
 
 
             });
         }
 
-        public void Check()
+        public async void Check()
         {
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                UserDialogs.Instance.Toast("Empty fields. Fill it up.", TimeSpan.FromSeconds(3));
+                await App.Current.MainPage.DisplayAlert("Wait!", "Fields can't be empty", "OK");
             }
             else
             {
-                UserDialogs.Instance.Toast($"Welcome {InputUsername}", TimeSpan.FromSeconds(5));
+                UserDialogs.Instance.Toast($"Welcome {InputEmail}", TimeSpan.FromSeconds(5));
             }
         }
 
 
+
+
         public ICommand NavigateCommand { get; }
+
+        
 
         
         
