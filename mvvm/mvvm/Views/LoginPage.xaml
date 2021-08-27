@@ -8,7 +8,7 @@
 
         Padding="10"
         VerticalOptions="Center"
-        RowDefinitions="Auto, Auto, Auto, Auto"
+        RowDefinitions="Auto, Auto, Auto, 80, Auto"
         ColumnDefinitions="*,*,*,*">
 
         <Image Source="airbnbresolutions.png" Grid.Row="0" Grid.ColumnSpan="4" />
@@ -46,12 +46,48 @@
             Grid.ColumnSpan="4"
             HorizontalOptions="Center"
             VerticalOptions="Center"
+            FontSize="Small"
             HeightRequest="40"
             TextColor="#FFF7F7F7"
             Text="Login"
-            WidthRequest="250"
+            WidthRequest="240"
             Command="{Binding CheckInput}"
             Background="#FFFE5F65"
             BorderColor="#FFFE5F65"></Button>
+
+      
+
+
+        <Label Grid.Row="5" Grid.ColumnSpan="4" HorizontalOptions="Center" FontSize="Body" HeightRequest="20">
+            
+            
+
+
+            <Label.FormattedText>
+                
+
+                <FormattedString>
+                    
+                    
+
+                    <Span Text="Sign Up"
+                          TextDecorations="Underline">
+
+
+                        <Span.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding NavigateCommand}"></TapGestureRecognizer>
+                            
+                        </Span.GestureRecognizers>
+                    </Span>
+                    
+                </FormattedString>
+                
+            </Label.FormattedText>
+            
+        </Label>
+        
+        
+        
     </Grid>
 </ContentPage>

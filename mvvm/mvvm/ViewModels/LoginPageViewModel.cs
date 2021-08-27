@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using mvvm.Views;
 using System;
 using System.ComponentModel;
 using System.Windows.Input;
@@ -40,6 +41,13 @@ namespace mvvm.ViewModels
         public LoginPageViewModel()
         {
             CheckInput = new Command(Check);
+
+            NavigateCommand = new Command(async () =>
+            {
+                await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
+
+
+            });
         }
 
         public void Check()
@@ -53,5 +61,11 @@ namespace mvvm.ViewModels
                 UserDialogs.Instance.Toast($"Welcome {InputUsername}", TimeSpan.FromSeconds(5));
             }
         }
+
+
+        public ICommand NavigateCommand { get; }
+
+        
+        
     }
 }
