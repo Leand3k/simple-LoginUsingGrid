@@ -16,13 +16,11 @@ namespace mvvm.Views
         public DiscoveryPage()
         {
             InitializeComponent();
-            //var ConnectionBinding = new DiscoveryPageViewModels();
-            //this.BindingContext = ConnectionBinding;
+            
 
             BindingContext = new DiscoveryPageViewModels();
         }
     }
 }
 
-//System.NullReferenceException
-//  Message = Object reference not set to an instance of an object.
+
