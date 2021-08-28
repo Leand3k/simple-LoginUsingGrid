@@ -28,7 +28,7 @@
             </ContentPage>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage  Title="Top Feedback">
+    <NavigationPage  Title="Top Foodie">
         <x:Arguments>
             <ContentPage>
                 <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Top Feedback"/>
