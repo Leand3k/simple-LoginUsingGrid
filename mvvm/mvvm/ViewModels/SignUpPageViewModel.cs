@@ -23,7 +23,7 @@ namespace mvvm.ViewModels
         {
             if (string.IsNullOrEmpty(SignUp.Email) || string.IsNullOrEmpty(SignUp.Password) || string.IsNullOrEmpty(SignUp.Name) || string.IsNullOrEmpty(SignUp.CheckPassword))
             {
-                //UserDialogs.Instance.Toast("Empty fields. Fill them up.", TimeSpan.FromSeconds(3));
+               
 
                 await App.Current.MainPage.DisplayAlert("Wait!", "Fields can't be empty", "OK");
             }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using mvvm.Model;
-
+﻿using mvvm.Model;
 
 namespace mvvm.ViewModels
 {
@@ -17,7 +13,6 @@ namespace mvvm.ViewModels
 
         public DiscoveryPageViewModels()
         {
-
             BarAndHotelsDiscoveryInfo.Title = "Bar and Hotels";
             BarAndHotelsDiscoveryInfo.NumberOfPlaces = "42 Places";
             BarAndHotelsDiscoveryInfo.Image = "BarsAndHotels.png";
@@ -42,14 +37,7 @@ namespace mvvm.ViewModels
             FeaturedFoods.NumberOfPlaces = "21 Places";
             FeaturedFoods.Image = "FeaturedFoods.png";
 
-            //BarAndHotelsDiscoveryInfo = new DiscoveryInfo() { Title = "Bar And Hotels", NumberOfPlaces = "42 Places", Image = "BarsAndHotels.png" };
-            //FineDining = new DiscoveryInfo() { Title = "Fine Dining", NumberOfPlaces = "15 Places", Image = "FineDining.png" };
-            //Cafes = new DiscoveryInfo() { Title = "Cafes", NumberOfPlaces = "28 Places", Image = "Cafes.png" };
-            //Nearby = new DiscoveryInfo() { Title = "Nearby", NumberOfPlaces = "34 Places", Image = "Nearby.png" };
-            //FastFoods = new DiscoveryInfo() { Title = "Fast Foods", NumberOfPlaces = "29 Places", Image = "FastFoods.png" };
-            //FeaturedFoods = new DiscoveryInfo() { Title = "Featured Foods", NumberOfPlaces = "21 Places", Image = "FeaturedFoods.png" };
+         
         }
     }
-
-    
 }
