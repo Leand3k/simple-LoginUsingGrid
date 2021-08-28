@@ -8,7 +8,6 @@ namespace mvvm
         public App()
         {
             InitializeComponent();
-
             
             MainPage = new NavigationPage(new LoginPage());
         }

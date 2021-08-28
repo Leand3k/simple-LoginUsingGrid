@@ -4,19 +4,17 @@
              x:Class="mvvm.Views.SignUpPage"
              BackgroundColor="#FFF7F7F7">
 
-
     <Grid
 
         Padding="10"
         VerticalOptions="Center"
-        RowDefinitions="Auto, Auto, Auto, 80, Auto, Auto"
+        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
         ColumnDefinitions="*,*,*,*">
 
         <Image Source="airbnbresolutions.png" Grid.Row="0" Grid.ColumnSpan="4" HeightRequest="150" />
 
         <Entry
 
-            
             Grid.Row="1"
             Grid.ColumnSpan="4"
             Placeholder="Name"
@@ -29,11 +27,8 @@
 
             ></Entry>
 
-
-
         <Entry
 
-            
             Grid.Row="2"
             Grid.ColumnSpan="4"
             Placeholder="Email"
@@ -75,7 +70,7 @@
             ClearButtonVisibility="WhileEditing"></Entry>
 
         <Button
-            Grid.Row="6"
+            Grid.Row="5"
             Grid.ColumnSpan="4"
             HorizontalOptions="Center"
             VerticalOptions="Center"
@@ -87,10 +82,5 @@
             Command="{Binding CheckSignUpCommand}"
             Background="#FFFE5F65"
             BorderColor="#FFFE5F65"></Button>
-
-        
     </Grid>
-
-
-
 </ContentPage>

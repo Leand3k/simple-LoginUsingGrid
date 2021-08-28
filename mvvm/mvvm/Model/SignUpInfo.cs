@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
 
 namespace mvvm.Model
 {
-    public class SignUpInfo
+    public class SignUpInfo : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
         public string Email { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public string CheckPassword { get; set; }
-        
-
     }
 }

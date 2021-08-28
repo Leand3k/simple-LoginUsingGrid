@@ -45,9 +45,9 @@ namespace mvvm.ViewModels
             NavigateCommand = new Command(async () =>
             {
                 await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
-
-
             });
+
+            
         }
 
         public async void Check()
@@ -59,17 +59,13 @@ namespace mvvm.ViewModels
             else
             {
                 UserDialogs.Instance.Toast($"Welcome {InputEmail}", TimeSpan.FromSeconds(5));
+                await App.Current.MainPage.Navigation.PushModalAsync(new HomeTabbedPage());
             }
         }
 
-
-
-
         public ICommand NavigateCommand { get; }
 
-        
+        public ICommand NavigateHomeCommand { get; }
 
-        
-        
     }
 }
