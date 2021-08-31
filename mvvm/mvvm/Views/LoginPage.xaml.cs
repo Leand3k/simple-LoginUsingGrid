@@ -15,8 +15,6 @@ namespace mvvm.Views
             this.BindingContext = ConnectionBinding;
             ConnectionBinding.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, try again", "OK");
             InitializeComponent();
-
-          
         }
     }
 }

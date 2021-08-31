@@ -46,8 +46,6 @@ namespace mvvm.ViewModels
             {
                 await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
             });
-
-            
         }
 
         public async void Check()
@@ -66,6 +64,5 @@ namespace mvvm.ViewModels
         public ICommand NavigateCommand { get; }
 
         public ICommand NavigateHomeCommand { get; }
-
     }
 }
